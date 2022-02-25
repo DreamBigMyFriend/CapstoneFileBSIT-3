@@ -1,0 +1,129 @@
+:root {
+  --background-color: linear-gradient(190deg, #65c18c, #c1f4c5);
+  --secondary-color: #3f1d1d;
+  --logo-color: #000000;
+  --primary-font-family: "Poppins", sans-serif;
+  --hover: rgb(0, 153, 255);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--background-color);
+  height: auto;
+  width: 100%;
+  font-family: var(--primary-font-family);
+  color: var(--secondary-color);
+  margin-top: auto;
+  clear: both;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--secondary-color);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+@media (max-width: 720px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .socials a {
+    color: #65c18c;
+  }
+}
+
+.footer-logo {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--logo-color);
+}
+.footer-content p {
+  text-align: start;
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+.footer-quotes {
+  padding: 5rem auto;
+  margin: 5rem;
+}
+
+.footer-links {
+  padding: 10px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+}
+.socials-li {
+  margin: 0 10px;
+  padding: 10px 0;
+}
+.socials a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+
+.socials a:hover {
+  color: var(--hover);
+}
+.socials a:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--hover);
+  transform: scaleX(0);
+}
+
+.socials a:before,
+.socials a:after {
+  content: "";
+  position: absolute;
+  transition: transform 0.5s ease;
+}
+
+.socials a:hover:before {
+  transform: scaleX(1);
+}
+
+.socials a i {
+  font-size: 1.5rem;
+}
+
+.footer-bottom {
+  background: black;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 1rem;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  color: rgb(80, 73, 73);
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}

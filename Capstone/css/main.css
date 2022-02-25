@@ -1,0 +1,37 @@
+@import "_footer.css";
+@import "_header.css";
+@import "_main.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section {
+  width: 1440px;
+  margin: auto;
+}

@@ -1,0 +1,24 @@
+.nav_wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  background-image: linear-gradient(to right, #627aff, #0004ff);
+}
+
+.nav_wrapper .links {
+  display: flex;
+  margin: 0 1rem;
+  list-style: none;
+}
+
+.links li a {
+  text-decoration: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: black;
+}
+
+.logo {
+  font-size: 2.5rem;
+  padding: 0 5rem;
+}
